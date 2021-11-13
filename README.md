@@ -1,0 +1,44 @@
+# RubyMp3gain
+
+RubyMP3Gain is an [Mp3Gain](http://mp3gain.sourceforge.net/) wrapper written in Ruby.
+
+## Installation
+
+```shell
+gem build mp3gain.gemspec
+```
+And then execute:
+```shell
+$ gem install mp3gain-1.0.0.gem
+```
+Or from ruby gems using
+or
+```shell
+gem install mp3gain
+```
+
+## Usage
+
+```ruby
+require 'mp3gain'
+mp3gain = Mp3gain::Mp3gain.new("path/to/MP3Gain/binary")
+## optional target db and preserve timestamps
+mp3gain = Mp3gain::Mp3gain.new("aacgain", 100, preserve_timestamp: false)
+
+# print current version
+mp3gain.version 
+# analyze the gain of the given files
+mp3gain.analyze_gain(['path/to/file1', 'path/to/file2'])
+# delete stored tag infos of the given files
+mp3gain.delete_stored_tag_info(['path/to/file1', 'path/to/file2'])
+# apply track gain depending on the provided target DB
+mp3gain.apply_track_gain(['path/to/file1', 'path/to/file2'])
+# apply album gain depending on the provided target DB
+mp3gain.apply_album_gain(['path/to/file1', 'path/to/file2'])
+# apply the given gain 
+mp3gain.add_gain(['path/to/file1', 'path/to/file2'], 5)
+```
+
+## License
+
+The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
