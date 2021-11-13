@@ -11,7 +11,7 @@ And then execute:
 ```shell
 $ gem install mp3gain-1.0.0.gem
 ```
-Or from ruby gems using
+Or from [rubygems](https://rubygems.org/gems/mp3gain) using
 or
 ```shell
 gem install mp3gain
