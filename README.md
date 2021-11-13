@@ -21,9 +21,9 @@ gem install mp3gain
 
 ```ruby
 require 'mp3gain'
-mp3gain = Mp3gain::Mp3gain.new("path/to/MP3Gain/binary")
+mp3gain = Mp3gain.init("path/to/MP3Gain/binary")
 ## optional target db and preserve timestamps
-mp3gain = Mp3gain::Mp3gain.new("aacgain", 100, preserve_timestamp: false)
+mp3gain = Mp3gain.init("aacgain", 100, preserve_timestamp: false)
 
 # print current version
 mp3gain.version 

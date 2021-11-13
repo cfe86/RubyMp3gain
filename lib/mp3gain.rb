@@ -8,6 +8,13 @@ require 'mp3gain/recommended_gain_change'
 
 # wrapper for mp3gain http://mp3gain.sourceforge.net/
 module Mp3gain
+
+  def self.init(mp3gain_path,
+                target_db = 89,
+                preserve_timestamp: true)
+    Mp3gain.new(mp3gain_path, target_db, preserve_timestamp)
+  end
+
   # Mp3gain entity to analyze and apply gain
   class Mp3gain
 
@@ -20,7 +27,7 @@ module Mp3gain
     # @param [Boolean] preserve_timestamp - keeps the existing timestamps when changing gain
     def initialize(mp3gain_path,
                    target_db = 89,
-                   preserve_timestamp: true)
+                   preserve_timestamp = true)
       @mp3gain_path = mp3gain_path
       @target_db = target_db
       @preserve_timestamp = preserve_timestamp
