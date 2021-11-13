@@ -1,6 +1,6 @@
 # RubyMp3gain
 
-RubyMP3Gain is an [Mp3Gain](http://mp3gain.sourceforge.net/) wrapper written in Ruby.
+RubyMP3Gain is an [Mp3Gain](http://mp3gain.sourceforge.net/) wrapper written in Ruby. Works also with e.g. `aacgain` (https://formulae.brew.sh/formula/aacgain) for Mac OSX.
 
 ## Installation
 
