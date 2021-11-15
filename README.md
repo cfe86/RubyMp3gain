@@ -4,17 +4,17 @@ RubyMP3Gain is an [Mp3Gain](http://mp3gain.sourceforge.net/) wrapper written in 
 
 ## Installation
 
+from [rubygems](https://rubygems.org/gems/mp3gain) using
+```shell
+gem install mp3gain
+```
+or from the sources using
 ```shell
 gem build mp3gain.gemspec
 ```
 And then execute:
 ```shell
 $ gem install mp3gain-1.0.0.gem
-```
-Or from [rubygems](https://rubygems.org/gems/mp3gain) using
-or
-```shell
-gem install mp3gain
 ```
 
 ## Usage
