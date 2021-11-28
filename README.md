@@ -25,6 +25,9 @@ mp3gain = Mp3gain.init("path/to/MP3Gain/binary")
 ## optional target db and preserve timestamps
 mp3gain = Mp3gain.init("aacgain", 100, preserve_timestamp: false)
 
+# or use a chainable to
+mp3gain =Mp3gain.path("path/to/MP3Gain/binary").with_target_db(100).do_preserve_timestamp(preserve: false)
+
 # print current version
 mp3gain.version 
 # analyze the gain of the given files

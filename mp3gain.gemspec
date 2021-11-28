@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = 'mp3gain'
-  spec.version       = '1.0.0'
+  spec.version       = '1.0.2'
   spec.authors       = ['Christian Feier']
   spec.email         = ['christian.feier@gmail.com']
 
